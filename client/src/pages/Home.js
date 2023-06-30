@@ -7,10 +7,17 @@ import { useNavigate } from "react-router-dom";
 function Home() {
   let navigate = useNavigate();
 
+
   const [listOfPosts, setListOfPosts] = useState([]);
   //const [likedPosts, setLikedPosts] = useState([]);
 
   // empty in the beginning
+
+  
+  // useEffect(() => {
+  //   // Refresh logic
+  // }, [props.refresh]);
+
 
   useEffect(() => {
     axios
@@ -27,6 +34,8 @@ function Home() {
         //   return like.PostId
         // }))
       });
+     
+
   }, []);
 
   // const likedAPost=(postId)=>{
@@ -63,6 +72,7 @@ function Home() {
   // }
 
   return (
+    <React.StrictMode>
     <div>
       <div className="align">
         {listOfPosts?.map((value, key) => {
@@ -94,6 +104,7 @@ function Home() {
         })}
       </div>
     </div>
+    </React.StrictMode>
   );
 }
 

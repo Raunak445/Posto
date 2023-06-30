@@ -3,8 +3,9 @@ import { Form, Formik, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
 
-import { useState, userEfffect } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { useHistory } from 'react-router-dom';
 
 function CreatePost() {
   const [listOfPosts, setListOfPosts] = useState([]);
@@ -23,8 +24,8 @@ function CreatePost() {
   // formik automatically passes the data as an argument
   const onSubmit = (data) => {
     axios.post("http://localhost:3001/posts", data);
-
-    navigate("/");
+    
+    navigate('/');
   };
 
   // we dont have to send empty array in post

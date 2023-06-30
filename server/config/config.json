@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "root",
-    "password": "Partytime1@.",
-    "database": "postodb",
-    "host": "127.0.0.1",
+    "username": "sql12629685",
+    "password": "adqDJClSFv",
+    "database": "sql12629685",
+    "host": "sql12.freemysqlhosting.net",
     "dialect": "mysql"
   },
   "test": {
