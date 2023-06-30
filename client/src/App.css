@@ -2,111 +2,90 @@
   text-align: center;
 } */
 
-.align{
-display: flex;
-flex-direction: column;
-align-items: center;
-gap:5rem;
-width: 100%;
+.align {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  width: 100%;
 }
 
-
-.Post >*{
-
-text-transform: capitalize;
-
-
-
-
- 
- 
+.Post > * {
+  text-transform: capitalize;
 }
-
-
-
 
 .Post {
-  background:linear-gradient(white,white) padding-box,linear-gradient(90deg,#f6ea41,#f048c6) border-box;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(90deg, #f6ea41, #f048c6) border-box;
   border-width: 6px;
-  border-style:solid;
-  border-color:transparent;
-  border-radius: .4rem;
-  width:400px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 0.4rem;
+  width: 400px;
   min-height: 400px;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
-
 }
-.c_Post{
-  background:linear-gradient(white,white) padding-box,linear-gradient(90deg,#f6ea41,#f048c6) border-box;
+.c_Post {
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(90deg, #f6ea41, #f048c6) border-box;
   border-width: 6px;
-  border-style:solid;
-  border-color:transparent;
-  border-radius: .4rem;
-  width:400px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 0.4rem;
+  width: 400px;
   min-height: 400px;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: auto;
-
 }
 
-
-
-.title{
-  background-color:cyan;
-  font-size: 20px;
-  text-transform:capitalize;
-  height: 40px;
-  font-weight: bold;
-  font-family: 'Courier New', Courier, monospace;
-  
-
-
-}
-
-.postText{
-font-family: cursive;
-
-}
-
-.usernaame{
+.title {
   background-color: cyan;
   font-size: 20px;
-  text-transform:capitalize;
-  font-weight:bold;
+  text-transform: capitalize;
+  height: 40px;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.postText {
+  font-family: cursive;
+}
+
+.username-div {
+  color: lightcoral;
+}
+.usernaame {
+  background-color: cyan;
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: bold;
   font-family: monospace;
-
-  
-
 }
 
 /* 
 CSS for Create Post */
 
-
 Link {
-    margin:20px;
-  background-color:cyan;
-
+  margin: 20px;
+  background-color: cyan;
 }
 
 body {
   font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
-  background: #70C1B3;
- padding: 50px 0;
+  background: #70c1b3;
+  padding: 50px 0;
 }
 
 .container {
   width: 80%;
   max-width: 1200px;
-  margin: 0 auto;
-  display:flex;
-  padding:10px
-
-
+  margin: 0 0;
+  display: flex;
+  padding: 10px;
 }
 
 /* .container {
@@ -115,54 +94,154 @@ body {
 
 } */
 
-.post{
-  
+.post {
   height: 300px;
   width: 82%;
- 
+}
 
+.postInput {
+  height: 200px;
+  width: 400px;
+}
+
+.postButton {
+  margin-top: 10px;
+}
+
+.listOfComments {
+  display: flex;
+  flex-direction: column;
+}
+.comment {
+  border: 2px solid black;
+  background-color: white;
+  margin: 10px;
+}
+
+.postContainer {
+  display: flex;
+  flex-direction: row;
+}
+.left-side {
+  height: 400px;
+  width: 400px;
+  align-content: flex-start;
+  margin: 40px;
+
+  /* align-items: left; */
+}
+
+.deleteButton{
+  height:20px;
+  width:20px;
+  background-color: red;
+  padding: 0px;
   
+
+
+}
+
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+
+
+}
+
+
+
+.right-side {
+  align-items: right;
+  height: 400px;
+  width: 400px;
+  margin: 40px;
+  margin-left: auto;
 }
 
 .flex-outer > * {
-margin:20px;
-
+  margin: 20px;
 }
 
 .flex-outer {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0 0;
   padding: 10px;
   font-family: cursive;
 }
 
-.nav{
+.nav {
   display: flex;
-   background-color: cyan;
-   margin:5px;
-  
-
+  background-color: cyan;
+  margin: 5px;
 }
 
-.nav>*{
-  margin-right:10px;
+.nav button {
+ padding: 0px;
 
-}
-
-span{
-  color:red;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
-}
-
-button{
-  background-color:black;
+  height: 40px;
+  text-decoration: solid;
   color:white;
-  padding:10px;
-  font-family: cursive;
-  margin: auto;
+  font-size: large;
+  width: 80px;
  
 }
+
+.nav h1{
+  color: #f048c6;
+  margin-top: 8px;
+  margin-left: 20px;
+}
+
+.nav > * {
+  margin-right: 10px;
+}
+
+span {
+  color: red;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+button {
+  background-color: black;
+  color: white;
+
+  padding: 10px;
+  font-family: cursive;
+  margin: auto;
+}
+
+/* Login comenent Css */
+
+.loginContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  padding-top: 100px;
+}
+
+.loginContainer input,
+button {
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  margin: 10px;
+}
+
+.loginContainer button {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.loginContainer input {
+  border: 2px solid dodgerblue;
+}
+
+/* Login css above  */
 
 /* .flex-outer,
 .flex-inner {
@@ -232,11 +311,6 @@ button{
   width: 100px;
 } */
 
-
-
-
-
-
 /* 
 .form{
 
@@ -280,7 +354,5 @@ button{
 .button:hover{
   background:#f048c6;
 } */
-
-
 
 /* ------------------------------------------- CSS for Post  --------------------------------- */

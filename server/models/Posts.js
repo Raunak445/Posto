@@ -1,7 +1,7 @@
 
 module.exports=(sequelize,DataTypes)=> {
  // exporting the above function so that we access it other files
-const Post = sequelize.define("Posts",{
+const Posts = sequelize.define("Posts",{
         title:{
                 type:DataTypes.STRING,
                 allowNull:false,
@@ -23,14 +23,20 @@ const Post = sequelize.define("Posts",{
 
 // note the string above in define is name of the table
 
-Post.associate=(models)=>{
-Post.hasMany(models.Comments,{
+Posts.associate=(models)=>{
+Posts.hasMany(models.Comments,{
         onDelete:"cascade",
-})
 }
+)
+// Posts.hasMany(models.Likes, {
+//         onDelete: "cascade",
+//       });
 
-return Post
 
+
+}
+return Posts
+        
 }
 
 
