@@ -1,1 +1,1 @@
-This is journal app.
+This is a journal app.
