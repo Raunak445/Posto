@@ -22,8 +22,6 @@ function Post() {
 
   // When you make a request to this endpoint, you would replace :id with the actual ID value of the user you want to retrieve, like this:
 
-
-
   useEffect(() => {
     axios.get(`http://localhost:3001/posts/byId/${id}`).then((response) => {
       setPostObject(response.data);
@@ -32,10 +30,7 @@ function Post() {
     axios.get(`http://localhost:3001/comments/${id}`).then((response) => {
       setComments(response.data);
     });
-  
-
   }, []);
-
 
   const addComment = () => {
     axios
@@ -59,11 +54,11 @@ function Post() {
 
           setComments([...comments, commentToAdd]);
           setNewComment("");
-        } });
+        }
+      });
 
-        // refresh needed after deleting posts 
-        window.location.reload();
-
+    // refresh needed after deleting posts
+    window.location.reload();
   };
 
   const deleteComment = (id) => {
@@ -80,8 +75,6 @@ function Post() {
           })
         );
       });
-
-     
   };
 
   return (

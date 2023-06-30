@@ -21,7 +21,7 @@ function Home() {
       })
       .then((res) => {
         setListOfPosts(res.data);
-        console.log(res.data)
+        console.log(res.data);
 
         // setLikedPosts(res.data.likedPosts.map((like)=>{
         //   return like.PostId
@@ -68,16 +68,15 @@ function Home() {
         {listOfPosts?.map((value, key) => {
           return (
             // in navigate we dont need to push we just pass it as function
-            <div className="Post" key={key}>
+            <div
+              className="Post"
+              key={key}
+              onClick={() => {
+                navigate(`/post/${value.id}`);
+              }}>
               <div className="title"> {value.title}</div>
 
-              <div
-                className="postText"
-                onClick={() => {
-                  navigate(`/post/${value.id}`);
-                }}>
-                {value.postText}
-              </div>
+              <div className="postText">{value.postText}</div>
 
               {/* <div className='footer'> */}
               {/* className='usernaame' */}

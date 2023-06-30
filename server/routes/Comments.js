@@ -15,7 +15,7 @@ router.post("/", validateToken, async (req, res) => {
   comment.username = username;
 
   await Comments.create(comment);
-  
+
   res.json(comment);
 });
 
